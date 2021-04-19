@@ -1,0 +1,17 @@
+<p>
+	隨意點連結後 <br />
+  請注意 url 與 breadcrumb 的變化
+</p>
+	<nav>
+		this is nav
+		<ul>
+			<li><a [routerLink]="['about', 'name']">ABOUT</a></li>
+			<li><a [routerLink]="['list']">LIST</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<router-outlet></router-outlet>
+	</div>
+
+	<app-breadcrumb></app-breadcrumb>
